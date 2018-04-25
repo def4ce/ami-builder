@@ -12,8 +12,6 @@
         "ami_name": "{{user `aws_ami_name`}}",
         "ami_description": "Ami-Builder Amazon Linux",
         "associate_public_ip_address": "true",
-        "force_deregister": "true",
-        "force_delete_snapshot": "true",
         "source_ami_filter": {
             "filters": {
                 "virtualization-type": "hvm",
