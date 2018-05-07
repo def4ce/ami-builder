@@ -208,17 +208,17 @@ Resources:
                   Name: Source
                   Actions:
                     -
-                      Name: GithubRepo
+                      Name: Source
                       ActionTypeId:
                         Category: Source
                         Owner: ThirdParty
-                        Provider: Github
                         Version: 1
+                        Provider: GitHub
                       Configuration:
                         Owner: def4ce
                         Repo: ami-builder
                         Branch: master
-                        OAuthToken: !Ref GitHubOAuthToken
+                        # OAuthToken: !Ref GitHubOAuthToken
                       OutputArtifacts:
                         - Name: SourceZip
                       RunOrder: 1
